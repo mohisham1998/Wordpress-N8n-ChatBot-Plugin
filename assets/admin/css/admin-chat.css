@@ -317,7 +317,9 @@
 }
 
 .automize-chats-table .check-column {
-    width: 40px;
+    width: 3%;
+    min-width: 40px;
+    max-width: 50px;
     padding: 15px 10px;
 }
 
@@ -327,66 +329,12 @@
     cursor: pointer;
 }
 
-/* أعمدة محددة */
-.column-session {
-    width: 150px;
-}
-
-.column-session .session-id {
-    font-size: 12px;
-    background: var(--automize-gray-100);
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: var(--automize-gray-600);
-}
-
-.column-visitor {
-    min-width: 200px;
-}
-
-.column-visitor .visitor-contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-family: 'Cairo', sans-serif !important;
-}
-
-.column-visitor .visitor-name {
-    font-weight: 700;
-    color: var(--automize-gray-800);
-    font-size: 14px;
-}
-
-.column-visitor .visitor-email {
-    font-size: 12px;
-    color: var(--automize-primary);
-}
-
-.column-visitor .visitor-phone {
-    font-size: 12px;
-    color: var(--automize-gray-600);
-}
-
-.column-visitor .visitor-anonymous {
-    color: var(--automize-gray-400);
-    font-style: italic;
-    font-size: 13px;
-    font-family: 'Cairo', sans-serif !important;
-}
-
-/* Highlight rows with contact info */
-.automize-chats-table tbody tr.has-contact-info {
-    background: linear-gradient(90deg, rgba(99, 102, 241, 0.05) 0%, transparent 100%) !important;
-    border-right: 3px solid var(--automize-primary);
-}
-
-.automize-chats-table tbody tr.has-contact-info:hover {
-    background: linear-gradient(90deg, rgba(99, 102, 241, 0.1) 0%, var(--automize-gray-50) 100%) !important;
-}
+/* أعمدة محددة - Column Widths */
 
 /* Location Column */
 .column-location {
-    min-width: 140px;
+    width: 15%;
+    min-width: 120px;
 }
 
 .column-location .location-wrapper {
@@ -433,7 +381,8 @@
 }
 
 .column-messages {
-    min-width: 200px;
+    width: 25%;
+    min-width: 180px;
 }
 
 .column-messages .message-count {
@@ -459,7 +408,8 @@
 }
 
 .column-status {
-    width: 120px;
+    width: 12%;
+    min-width: 100px;
 }
 
 .status-badge {
@@ -492,7 +442,8 @@
 }
 
 .column-date {
-    width: 200px;
+    width: 20%;
+    min-width: 150px;
 }
 
 .column-date .date-info {
@@ -533,7 +484,8 @@
 }
 
 .column-actions {
-    width: 180px;
+    width: 15%;
+    min-width: 140px;
 }
 
 .column-actions .button {
